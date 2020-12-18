@@ -1,0 +1,19 @@
+.tableHead{
+    display: flex;
+    flex-direction: row;
+    height:60px;
+}
+
+.tableData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center; 
+    width:200px;
+    border-bottom: solid 1px #a5cfcf;
+}
+
+.baseTable{
+    background: #ffffff;
+    border-radius: 8px;
+}

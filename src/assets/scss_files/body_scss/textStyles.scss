@@ -1,0 +1,46 @@
+.text_12_600_white_semibold{
+    @include text(12px,600,$white,OpenSans-Semibold)
+}
+
+.text_14_600_greydark_semibold{
+    @include text(14px,600,$grey-dark,OpenSans-Semibold)
+}
+
+.text_14_600_blackdark_semibold{
+    @include text(14px,600,$black-dark,OpenSans-Semibold)
+}
+
+.text_14_600_black_semibold{
+    @include text(14px,600,$black,OpenSans-Semibold)
+}
+
+.text_15_600_white_semibold{
+    @include text(15px,600,$white,OpenSans-Semibold)
+}
+
+.text_16_normal_greydark_regular{
+    @include text(16px,normal,$grey-dark,OpenSans-Regular)
+}
+
+.text_16_600_reddark_semibold{
+    @include text(16px,600,$red-dark,OpenSans-Semibold)
+}
+
+.text_28_600_white_semibold{
+    @include text(28px,600,$white,OpenSans-Semibold)
+}
+
+.text_30_600_greydark_semibold{
+    @include text(30px,600,$grey-dark,OpenSans-Semibold)
+}
+
+.text_40_600_black_semibold{
+    @include text(40px,600,$black,OpenSans-Semibold)
+}
+
+.text_24_normal_white_tamil{
+    @include text(28px,normal,$white,TamilSangamMN)
+}
+// .text_16_600_blue{
+//     @include text(16px,600,$blue)
+// }

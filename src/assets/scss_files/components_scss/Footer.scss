@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .contact_div{
+        padding:20px;
+        background: $blue-lightest
+    };
+    .credit_div{
+        padding:10px 20px ;
+        background: $black-light;
+    }
+
+}

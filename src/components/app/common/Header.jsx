@@ -8,11 +8,18 @@ class Header extends Component{
 
     render(){
         console.log('Header')
+        var {showBurgerMenu,showCart} = this.props
         return(
-            <div style={{height:'48px',width:'100%',background:'#0e0f0a',display:'flex',alignItems:'center',justifyContent:'space-between',padding:'4px 16px'}}>
-                <img src={menuIcon_white} width={20} height={17} />
+            <div className='header width-100 flex_row item_center content_between'>
+                {
+                    showBurgerMenu && 
+                    <img src={menuIcon_white} width={20} height={17} />
+                }
                 <img src={knr_logo}  width={46} height={40}/>
-                <img src={cart_white} width={17} height={17} />
+                {
+                    showCart && 
+                    <img src={cart_white} width={17} height={17} />
+                }
             </div>
         )
     }

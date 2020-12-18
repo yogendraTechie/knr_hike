@@ -1,38 +1,22 @@
-.App {
-  text-align: center;
-}
+//NOTE=> All the scss files will be imported here only
+//below "Body" scss files should be at the TOP of this file and in the SAME ORDER, please do not change
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+//body
+@import './assets/scss_files/body_scss/variables.scss';
+@import './assets/scss_files/body_scss/mixims.scss';
+@import './assets/scss_files/body_scss/fonts.scss';
+@import './assets/scss_files/body_scss/textStyles.scss';
+@import './assets/scss_files/body_scss/main.scss';
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+//generic
+@import './assets/scss_files/generic_scss/button.scss';
+@import './assets/scss_files/generic_scss/table.scss';
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+//components
+@import './assets/scss_files/components_scss/Header.scss';
+@import './assets/scss_files/components_scss/Footer.scss';
+@import './assets/scss_files/components_scss/LandingPage.scss';
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+//common
+@import './assets/scss_files/quickPick.scss';
+@import './assets/scss_files/custom.scss';
