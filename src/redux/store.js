@@ -1,38 +1,10 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk'
-// import logger from 'redux-logger'
-import rootReducer from './redux/reducers'
-// import { persistStore, persistReducer } from 'redux-persist';
-// import storage from 'redux-persist/lib/storage'; 
-// import { composeWithDevTools } from 'redux-devtools-extension'
+import createSagaMiddleware from 'redux-saga'
+import rootReducer from './reducers'
+import watcher from './sagas'
 
+const sagaMiddleware = createSagaMiddleware();
 
-// const persistConfig = {
-//     key: 'root',
-//     storage,
-//     whitelist : ['data','auth','order','userProfile','deliveryAddress']
-// };
+export const store = createStore(rootReducer,applyMiddleware(sagaMiddleware));
 
-// const persistedReducer = persistReducer(persistConfig, rootReducer)
-
-// const initialState = {};
-
-const middleware = [
-    thunk,
-    // logger
-]
-
-const composedEnhancers = compose(
-    applyMiddleware(...middleware),
-      // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-
-export default () => {
-
-    // const store = createStore(persistedReducer, initialState, composedEnhancers);
-    //return { store, persistor: persistStore(store) };
-
-    const store = createStore(rootReducer,composedEnhancers);
-
-    return { store };
-};
+sagaMiddleware.run(watcher);

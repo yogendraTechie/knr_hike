@@ -10,12 +10,14 @@
 
 //generic
 @import './assets/scss_files/generic_scss/button.scss';
+@import './assets/scss_files/generic_scss/select.scss';
 @import './assets/scss_files/generic_scss/table.scss';
 
 //components
 @import './assets/scss_files/components_scss/Header.scss';
 @import './assets/scss_files/components_scss/Footer.scss';
 @import './assets/scss_files/components_scss/LandingPage.scss';
+@import './assets/scss_files/components_scss/ProductsCatalogue.scss';
 
 //common
 @import './assets/scss_files/quickPick.scss';

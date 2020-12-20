@@ -3,16 +3,15 @@ import './App.scss';
 import { BrowserRouter } from 'react-router-dom';
 const AppRoutes = lazy(() => import('./components/routes/AppRoutes'));
 const WebRoutes = lazy(() => import('./components/routes/WebRoutes'));
-// import { Provider } from 'react-redux'
-// import configureStore from './redux/store';
-// const { store } = configureStore();
+
+import { Provider } from 'react-redux'
+import {store} from './redux/store';
 
 class App extends Component{
   
   render(){ 
-    console.log('App')   
     return(
-      // <Provider store={store}>
+      <Provider store={store}>
         <BrowserRouter>
         
           <Fragment>
@@ -27,7 +26,7 @@ class App extends Component{
           </Fragment>
 
         </BrowserRouter>
-      // </Provider>
+      </Provider>
     )
   }
 }

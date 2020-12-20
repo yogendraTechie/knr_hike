@@ -18,12 +18,33 @@
     @include text(15px,600,$white,OpenSans-Semibold)
 }
 
+.text_15_normal_greylight_regular{
+    @include text(15px,normal,$grey-light,OpenSans-Regular)
+}
+
 .text_16_normal_greydark_regular{
     @include text(16px,normal,$grey-dark,OpenSans-Regular)
 }
 
 .text_16_600_reddark_semibold{
     @include text(16px,600,$red-dark,OpenSans-Semibold)
+}
+
+.text_16_600_black_semibold{
+    @include text(16px,600,$black,OpenSans-Semibold)
+}
+
+.text_16_600_white_semibold{
+    @include text(16px,600,$white,OpenSans-Semibold)
+}
+
+
+.text_20_600_black_semibold{
+    @include text(20px,600,$black,OpenSans-Semibold)
+}
+
+.text_24_600_black_semibold{
+    @include text(24px,600,$black,OpenSans-Semibold)
 }
 
 .text_28_600_white_semibold{

@@ -1,0 +1,29 @@
+.products_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    padding: 40px 20px; 
+    .products_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .product_card{
+            border-radius: 4px;
+            border: solid 0.2px $grey-dark;
+            background-color: $white-grey;
+            margin: 30px 0;
+            width: 100%;
+            .product_details{
+                padding: 15px 12px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+            }
+        }
+    }
+}
