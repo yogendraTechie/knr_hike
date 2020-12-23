@@ -49,7 +49,7 @@ class ProductsCatalogue extends Component{
     render(){
         var {productsList} = this.state;
         console.log(this.state,'state_productsCatalogue',this.props)
-        return<section className='products_section' >
+        return<section className='products_section' id='productsCatalogueSection' >
                 <div className='text_20_600_black_semibold'>Our Products</div>
                 <div className='products_list'>
                     {

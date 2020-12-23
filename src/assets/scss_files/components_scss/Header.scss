@@ -1,5 +1,12 @@
 .header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     height:48px;
     background:$black-light;
     padding:4px 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

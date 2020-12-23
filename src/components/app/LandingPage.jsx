@@ -14,7 +14,7 @@ class LandingPage extends Component{
             <Fragment>
                 <Header showBurgerMenu={true} showCart={true}/>
 
-                <section className='main_section'>
+                <section className='main_section' id="homeSection">
                     <img src={mainSectionImage} className='width_100 height_100' style={{minHeight:'162px'}}/>
                     <div className='main_content'>
                         <div className='flex_column mg_8'>
@@ -32,7 +32,7 @@ class LandingPage extends Component{
                                 No Ajinomoto.
                             </span>
                         </div>
-                        <button className='white_dark_btn text_14_600_greydark_semibold mg_25'>Buy Now</button>
+                        <button className='white_dark_btn mg_25'><a href='#productsCatalogueSection' className='text_14_600_greydark_semibold'>BUY NOW</a></button>
                     </div>
                 </section>
 

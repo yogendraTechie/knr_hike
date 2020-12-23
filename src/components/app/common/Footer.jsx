@@ -8,7 +8,7 @@ class Footer extends Component{
     render(){
         console.log('Footer')
         return(
-            <section className='footer'>
+            <section className='footer' id="contactSection">
                 <div className='contact_div'>
                     <div className='text_30_600_greydark_semibold mg_top_10'>Contact Us</div>
                     <div className='text_14_600_blackdark_semibold mg_8'>We take suggestions and ideas too!</div>

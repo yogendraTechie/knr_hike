@@ -17,7 +17,7 @@ class App extends Component{
         
           <Fragment>
 
-            <div className="App" style={{width:'100%'}}>
+            <div className="pos_rel width_100">
               <Suspense fallback={<div>Loading..</div>}>
                 {(window.screen.width < 760) ? <AppRoutes /> : <WebRoutes />}
               </Suspense>    
