@@ -1,7 +1,7 @@
 import React ,{Component} from 'react';
 
 import defaultImage from '../../../assets/images/defaultImage.png'
-import Chettinadu_Chicken_65_Masala from '../../../assets/images/Chettinadu_Chicken_65_Masala.png'
+//import Chettinadu_Chicken_65_Masala from '../../../assets/images/Chettinadu_Chicken_65_Masala.png'
 
 import ItemSelect from "../../custom_components/Select.jsx";
 

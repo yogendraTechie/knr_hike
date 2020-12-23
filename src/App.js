@@ -1,11 +1,12 @@
 import React, { Component,Fragment,lazy,Suspense } from 'react';
 import './App.scss';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux'
+import {store} from './redux/store';
+
 const AppRoutes = lazy(() => import('./components/routes/AppRoutes'));
 const WebRoutes = lazy(() => import('./components/routes/WebRoutes'));
 
-import { Provider } from 'react-redux'
-import {store} from './redux/store';
 
 class App extends Component{
   
