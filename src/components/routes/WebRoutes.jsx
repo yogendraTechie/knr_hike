@@ -10,6 +10,7 @@ class AppRoutes extends Component{
         return(
             <Switch>
                 <Route exact path="/" render={()=>'Web Page'}/>
+                <Redirect to='/' />
             </Switch>
         )
     }

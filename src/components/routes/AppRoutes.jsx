@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route,Redirect } from "react-router-dom";
 
 import LandingPage from '../app/LandingPage.jsx'
 
@@ -10,6 +10,7 @@ class AppRoutes extends Component{
         return(
             <Switch>
                 <Route exact path="/" component={LandingPage} />
+                <Redirect to='/' />
             </Switch>
         )
     }
