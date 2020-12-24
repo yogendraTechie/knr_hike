@@ -1,6 +1,5 @@
 {
   "name": "knr_hike",
-  "homepage": "https://yogendraTechie.github.io/knr_hike",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
