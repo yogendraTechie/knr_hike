@@ -9,8 +9,8 @@ class AppRoutes extends Component{
         console.log('AppRoutes')
         return(
             <Switch>
-                <Route exact path="/" component={LandingPage} />
-                <Redirect to='/' />
+                <Route exact path="/knr_hike" component={LandingPage} />
+                <Redirect to='/knr_hike' />
             </Switch>
         )
     }

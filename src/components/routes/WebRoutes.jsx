@@ -9,8 +9,8 @@ class AppRoutes extends Component{
         console.log('WebRoutes')
         return(
             <Switch>
-                <Route exact path="/" render={()=>'Web Page'}/>
-                <Redirect to='/' />
+                <Route exact path="/knr_hike" render={()=>'Web Page'}/>
+                <Redirect to='/knr_hike' />
             </Switch>
         )
     }
